@@ -19,14 +19,14 @@ function contains(array, target){
 
 
 /////////// Prompt 3 ///////////
-/////////// time complexity: O(n)
+/////////// time complexity: O(n) - linear but twice over (you drop the t coefficient)
 function partialContains(array, target, start){
   return array.slice(start).indexOf(target) > -1;
 }
 
 
 /////////// Prompt 4 ///////////
-/////////// time complexity: 3n
+/////////// time complexity: O(1)
 function square(array){
   for (var i = 0; i < 3; i++){
     array[i] = array[i] * array[i];
@@ -35,7 +35,7 @@ function square(array){
 }
 
 /////////// Prompt 5 ///////////
-/////////// time complexity: 10n
+/////////// time complexity: O(n)
 function repeat(array){
   var repeat = [];
   for (var j = 0; j < 10; j++){
@@ -51,7 +51,7 @@ function repeat(array){
 
 
 /////////// Prompt 6 ///////////
-/////////// time complexity: n
+/////////// time complexity: O(n)
 function gcf(num1, num2){
   if (num1 > num2){ //this ensures num1 is the smaller number
     var temp = num1;
@@ -68,7 +68,7 @@ function gcf(num1, num2){
 
 
 /////////// Prompt 7 ///////////
-/////////// time complexity: n^2
+/////////// time complexity: ?????
 function countChar(string){
   var counts = {};
   var currChar, currCharCount;
@@ -103,7 +103,7 @@ var factorial = function(num){
 
 
 /////////// Prompt 9 ///////////
-/////////// time complexity: O(n)
+/////////// time complexity: O(log3(n))
 function tournament(players){
   var results;
   if (players.length < 3){
@@ -121,7 +121,7 @@ function tournament(players){
 
 
 /////////// Prompt 10 ///////////
-/////////// time complexity: n/3
+/////////// time complexity: 
 function tournamentRedux(players){
   var results;
   if (players.length < 3){
@@ -140,7 +140,7 @@ function tournamentRedux(players){
 
 
 /////////// Prompt 11 ///////////
-/////////// time complexity: n^2
+/////////// time complexity: Exponential
 function allPasswords(allowedChars, maxLength){
   var results = [];
 
@@ -161,7 +161,7 @@ function allPasswords(allowedChars, maxLength){
 
 
 /////////// Prompt 12 ///////////
-/////////// time complexity: n^2
+/////////// time complexity: O(log4n)
 function findColor(quadTree, coordinates){
   //a quad tree is a tree where each node has 4 children 
   //or no children, usually used to divide a two-dimensional
